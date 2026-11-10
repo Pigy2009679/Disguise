@@ -81,7 +81,7 @@ class DisguiseActivity : Activity() {
         screen(config.disguiseName, "All notes")
         val search = EditText(this).apply {
             hint = "Search notes"
-            singleLine = true
+            isSingleLine = true
             setCompoundDrawablesWithIntrinsicBounds(android.R.drawable.ic_menu_search, 0, 0, 0)
         }
         root.addView(search)
@@ -116,7 +116,7 @@ class DisguiseActivity : Activity() {
             hint = "0"
             textSize = 32f
             gravity = Gravity.END
-            singleLine = true
+            isSingleLine = true
             inputType = android.text.InputType.TYPE_CLASS_TEXT or android.text.InputType.TYPE_TEXT_FLAG_NO_SUGGESTIONS
             setPadding(dp(12), dp(16), dp(12), dp(16))
             setBackgroundColor(Color.WHITE)
