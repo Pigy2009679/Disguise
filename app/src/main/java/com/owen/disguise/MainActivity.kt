@@ -149,7 +149,7 @@ class MainActivity : Activity() {
         fun field(hint: String, value: String = "") = EditText(this).apply {
             this.hint = hint
             setText(value)
-            singleLine = true
+            isSingleLine = true
         }
         val disguiseName = field("Disguised app name", type)
         form.addView(text("Shortcut name", 13f, muted)); form.addView(disguiseName)
